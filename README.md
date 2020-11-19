@@ -17,5 +17,5 @@ Execute
 ---------------------------
 
 ``` bash
-python chessboard.py
+python main.py
 ```

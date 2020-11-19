@@ -9,13 +9,16 @@ from rook import Rook
 class Chessboard():
     def __init__(self):
         self.squares = [[Rook(), Knight(), Bishop(), Queen(), King(), Bishop(), Knight(), Rook()],
-                        [Pawn(), Pawn(), Pawn(), Pawn(),Pawn(),Pawn(), Pawn(), Pawn()],
+                        [Pawn(), Pawn(), Pawn(), Pawn(),
+                         Pawn(), Pawn(), Pawn(), Pawn()],
                         [None, None, None, None, None, None, None, None],
                         [None, None, None, None, None, None, None, None],
                         [None, None, None, None, None, None, None, None],
                         [None, None, None, None, None, None, None, None],
-                        [Pawn(), Pawn(), Pawn(), Pawn(),Pawn(), Pawn(), Pawn(), Pawn()],
-                        [Rook(),Knight(),Bishop(), Queen(),King(), Bishop(), Knight(), Rook()],
+                        [Pawn(), Pawn(), Pawn(), Pawn(),
+                         Pawn(), Pawn(), Pawn(), Pawn()],
+                        [Rook(), Knight(), Bishop(), Queen(),
+                         King(), Bishop(), Knight(), Rook()],
                         ]
         for row in range(len(self.squares)):
             for col in range(len(self.squares[0])):
@@ -31,12 +34,18 @@ class Chessboard():
                 if p:
                     p.draw()
                 else:
-                    print(' |   ', end = '')
+                    print(' |   ', end='')
             print(' | ')
-            print(' |', end = '')
+            print(' |', end='')
             for col in range(len(self.squares[0])):
-                print('____|', end = '')
+                print('____|', end='')
             print('')
+
+    def move(self, origin, destination):
+        print(f'from: {origin} to: {destination}')
+        return True
+
+
 if __name__ == "__main__":
     chessboard = Chessboard()
     chessboard.draw()
