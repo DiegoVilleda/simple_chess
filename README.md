@@ -1,19 +1,19 @@
 Simple chess
 ======================
 
-Program to play chess based on python 3.
+Program to play chess based on Python 3.
 
 Requirements
 ---------------------------
 
-* python3
+* Python 3
 
-Install 
+Installation 
 --------------------------
 
 None
 
-Execute
+Execution
 ---------------------------
 
 ``` bash
