@@ -8,3 +8,8 @@ if __name__ == "__main__":
     o = input('Please introduce the origin square:')
     d = input('Please introduce the destination square:')
     chessboard.move(o,d)
+
+    print('black  player turn')
+    o = input('Please introduce the origin square:')
+    d = input('Please introduce the destination square:')
+    chessboard.move(o,d)
