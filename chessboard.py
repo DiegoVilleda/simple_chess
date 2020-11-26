@@ -5,7 +5,7 @@ from king import King
 from knight import Knight
 from rook import Rook
 
-
+#Holadiositosoyyodenuevo
 class Chessboard():
     def __init__(self):
         self.squares = [[Rook(), Knight(), Bishop(), Queen(), King(), Bishop(), Knight(), Rook()],
