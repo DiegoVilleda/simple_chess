@@ -39,8 +39,7 @@ class Chessboard():
             print(' |', end='')
             for col in range(len(self.squares[0])):
                 print('____|', end='')
-            print('')
-
+            print(f'{row}')
     def move(self, origin, destination):
         print(f'from: {origin} to: {destination}')
         return True
